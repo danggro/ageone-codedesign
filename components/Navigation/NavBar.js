@@ -26,7 +26,7 @@ export default function NavBar() {
         </div>
       </Container>
       <div
-        className={`fixed top-0 transition-all  z-50 w-screen h-screen bg-primary-500 ${
+        className={`fixed sm:hidden top-0 transition-all  z-50 w-screen h-screen bg-primary-500 ${
           offcanvas ? "right-0" : "-right-full"
         }`}
       >

@@ -1,6 +1,7 @@
 import Button from "../Button";
 import Container from "../Container";
 import CardProject from "./CardProject";
+import CtgProject from "./CtgProject";
 
 export default function SectionProject() {
   return (
@@ -18,26 +19,22 @@ export default function SectionProject() {
             helped other businesses elevate their brand and drive business
             growth.
           </h4>
-          <div className="items-center hidden p-2 mx-auto bg-white rounded-full sm:flex w-fit">
-            <Button variant="medium">UI/UX Design</Button>
-            <div className="px-6 font-medium text-gray-500 text-md">
-              Digital Marketing
-            </div>
-            <div className="px-6 font-medium text-gray-500 text-md">
-              Sosmed Management
-            </div>
-            <div className="px-6 font-medium text-gray-500 text-md">
-              Development
-            </div>
-          </div>
-          <div className="flex items-center p-1 mx-auto bg-white rounded-full sm:hidden w-fit">
-            <Button variant="small">UI/UX</Button>
-            <div className="px-4 text-sm font-medium text-gray-500">
-              Digital
-            </div>
-            <div className="px-4 text-sm font-medium text-gray-500">SMM</div>
-            <div className="px-4 text-sm font-medium text-gray-500">Dev</div>
-          </div>
+          <ul className="items-center hidden p-2 mx-auto bg-white rounded-full ctg sm:flex w-fit">
+            <CtgProject def variant="desktop">
+              UI/UX Design
+            </CtgProject>
+            <CtgProject variant="desktop">Digital Marketing</CtgProject>
+            <CtgProject variant="desktop">Sosmed Management</CtgProject>
+            <CtgProject variant="desktop">Development</CtgProject>
+          </ul>
+          <ul className="flex items-center p-1 mx-auto bg-white rounded-full sm:hidden w-fit">
+            <CtgProject def variant="mobile">
+              UI/UX
+            </CtgProject>
+            <CtgProject variant="mobile">Digital</CtgProject>
+            <CtgProject variant="mobile">SMM</CtgProject>
+            <CtgProject variant="mobile">Dev</CtgProject>
+          </ul>
         </div>
         <div className="flex flex-wrap mt-8 space-y-3 sm:mt-16 sm:space-y-0 sm:space-x-5 sm:flex-nowrap">
           <CardProject
