@@ -21,7 +21,7 @@ export default function SectionHero() {
           For Your Business Growth
         </h1>
         <h4 className="text-xl font-medium text-center text-gray-200">
-          We're a team of experienced designers, developers, <br /> and
+          We&apos;re a team of experienced designers, developers, <br /> and
           marketers, passionate about delivering exceptional digital solutions.
         </h4>
         <div className="text-center mt-14">

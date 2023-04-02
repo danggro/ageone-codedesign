@@ -14,8 +14,9 @@ export default function SectionProject() {
             Our Project Have Been <span className="text-primary-500">Done</span>
           </h1>
           <h4 className="px-20 mt-6 text-xl font-medium text-gray-200 mb-14">
-            Take a look at some of our recent projects and see how we've helped
-            other businesses elevate their brand and drive business growth.
+            Take a look at some of our recent projects and see how we&apos;ve
+            helped other businesses elevate their brand and drive business
+            growth.
           </h4>
           <div className="flex items-center p-2 mx-auto bg-white rounded-full w-fit">
             <Button variant="medium">UI/UX Design</Button>
