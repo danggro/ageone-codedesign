@@ -5,7 +5,7 @@ import CardProject from "./CardProject";
 export default function SectionProject() {
   return (
     <section
-      id="project"
+      id="Project"
       className="bg-[url('/sec-project.png')] py-[100px] bg-gray-900"
     >
       <Container>

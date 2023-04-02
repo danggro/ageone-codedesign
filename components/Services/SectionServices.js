@@ -3,7 +3,7 @@ import CardServices from "./CardServices";
 
 export default function SectionServices() {
   return (
-    <section id="services" className="py-[100px]">
+    <section id="Services" className="py-[100px]">
       <Container>
         <h1 className="font-bold text-center text-display-lg">
           The Services We Offer{" "}

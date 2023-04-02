@@ -1,0 +1,58 @@
+[
+  {
+    "id": "1",
+    "username": "Sabrina Car Panther",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam diam sagittis sagittis ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam.",
+    "job": "Star Founder",
+    "img": "/Avatar/avatar-1.png"
+  },
+  {
+    "id": "2",
+    "username": "Clara Insomnia",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam diam sagittis sagittis ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam.",
+    "job": "Occupation",
+    "img": "/Avatar/avatar-2.png"
+  },
+  {
+    "id": "3",
+    "username": "John Doe",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam diam sagittis sagittis ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam.",
+    "job": "Earth Founder",
+    "img": "/Avatar/avatar-3.png"
+  },
+  {
+    "id": "4",
+    "username": "Sabrina Car Panther",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam diam sagittis sagittis ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam.",
+    "job": "Occupation",
+    "img": "/Avatar/avatar-1.png"
+  },
+  {
+    "id": "5",
+    "username": "Lil Nas",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam diam sagittis sagittis ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam.",
+    "job": "Moon Founder",
+    "img": "/Avatar/avatar-5.png"
+  },
+  {
+    "id": "6",
+    "username": "Alan Runner",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam diam sagittis sagittis ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam.",
+    "job": "Sun Founder",
+    "img": "/Avatar/avatar-6.png"
+  },
+  {
+    "id": "7",
+    "username": "John Doe",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam diam sagittis sagittis ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam.",
+    "job": "Earth Founder",
+    "img": "/Avatar/avatar-3.png"
+  },
+  {
+    "id": "8",
+    "username": "Name",
+    "desc": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam diam sagittis sagittis ullamcorper. Lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam.",
+    "job": "Occupation",
+    "img": "/Avatar/avatar-8.png"
+  }
+]
