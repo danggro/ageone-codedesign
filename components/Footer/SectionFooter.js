@@ -20,8 +20,9 @@ export default function SectionFooter() {
           <div className="w-6/12">
             <NavLogo />
             <h5 className="w-8/12 mt-6 mb-10 text-lg text-gray-200">
-              We're a team of experienced designers, developers, and marketers,
-              passionate about delivering exceptional digital solutions.
+              We&apos;re a team of experienced designers, developers, and
+              marketers, passionate about delivering exceptional digital
+              solutions.
             </h5>
             <h5 className="text-lg text-gray-200">hello@agenone.com</h5>
           </div>
