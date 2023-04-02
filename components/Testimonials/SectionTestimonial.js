@@ -7,8 +7,8 @@ export default function SectionTestimonials() {
   return (
     <section className="h-[800px] overflow-y-scroll">
       <Container>
-        <div className="flex w-10/12 mx-auto space-x-12">
-          <div className="w-6/12">
+        <div className="mx-auto sm:flex sm:w-10/12 sm:space-x-12">
+          <div className="sm:w-6/12">
             {testimonials.map((t) => {
               if (t.id < 5) {
                 return (
@@ -25,7 +25,7 @@ export default function SectionTestimonials() {
               }
             })}
           </div>
-          <div className="w-6/12 mt-[100px]">
+          <div className="sm:w-6/12 sm:mt-[100px]">
             {testimonials.map((t) => {
               if (t.id > 4) {
                 return (

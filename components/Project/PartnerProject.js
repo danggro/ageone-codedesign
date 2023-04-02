@@ -12,24 +12,48 @@ export default function PartnerProject() {
   return (
     <div className="w-full py-8 bg-gray-900 border-t">
       <Container>
-        <div className="flex justify-between">
+        <div className="flex flex-wrap justify-between sm:flex-row">
           <Link href="">
-            <Image alt="" src={Slack} />
+            <Image
+              alt=""
+              src={Slack}
+              className="sm:scale-100 origin-left scale-[88%]"
+            />
           </Link>
           <Link href="">
-            <Image alt="" src={Google} />
+            <Image
+              alt=""
+              src={Google}
+              className="sm:scale-100 origin-right scale-[88%]"
+            />
           </Link>
           <Link href="">
-            <Image alt="" src={Netflix} />
+            <Image
+              alt=""
+              src={Netflix}
+              className="sm:scale-100 origin-left scale-[88%]"
+            />
           </Link>
           <Link href="">
-            <Image alt="" src={Airbnb} />
+            <Image
+              alt=""
+              src={Airbnb}
+              className="sm:scale-100 origin-right scale-[88%]"
+            />
           </Link>
           <Link href="">
-            <Image alt="" src={Adobe} />
+            <Image
+              alt=""
+              src={Adobe}
+              className="sm:scale-100 origin-left scale-[88%]"
+            />
           </Link>
           <Link href="">
-            <Image alt="" src={Microsoft} />
+            <Image
+              alt=""
+              src={Microsoft}
+              className="sm:scale-100 origin-right scale-[88%]"
+            />
           </Link>
         </div>
       </Container>

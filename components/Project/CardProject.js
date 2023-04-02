@@ -3,25 +3,27 @@ import SpecialIcon from "../img/SpecialIcon";
 
 export default function CardProject(props) {
   return (
-    <div className="w-6/12 group cursor-pointer bg-gray-800 rounded-[32px] p-4">
+    <div className="sm:w-6/12 group cursor-pointer bg-gray-800 sm:rounded-[32px] p-4 rounded-[24px]">
       <div className="relative">
         <Image
           src={props.img}
           width="598"
           height="579"
           alt=""
-          className="rounded-[20px] transition-all group-hover:opacity-50"
+          className="sm:rounded-[20px] rounded-[12px] transition-all group-hover:opacity-50"
         ></Image>
-        <div className="absolute transition-all scale-0 group-hover:scale-100 top-[50%] -translate-y-[50%] left-[50%] -translate-x-[50%]">
+        <div className="absolute transition-all scale-0 group-hover:scale-50 top-[50%] -translate-y-[50%] left-[50%] -translate-x-[50%]">
           <SpecialIcon />
         </div>
       </div>
 
       <div>
-        <h4 className="mt-6 mb-3 text-4xl font-bold text-white">
+        <h4 className="mt-4 mb-2 text-lg font-bold text-white sm:mt-6 sm:mb-3 sm:text-4xl">
           {props.title}
         </h4>
-        <p className="pr-10 text-xl text-gray-100">{props.desc}</p>
+        <p className="text-gray-200 sm:pr-10 sm:text-xl text-md">
+          {props.desc}
+        </p>
       </div>
     </div>
   );

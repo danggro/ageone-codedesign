@@ -1,14 +1,18 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 function ArrowDown(props) {
+  const [screen, setScreen] = useState(null);
+  useEffect(() => {
+    setScreen(window.screen.width);
+  }, []);
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="40"
-      height="40"
+      width={screen < 640 ? "24" : "40"}
+      height={screen < 640 ? "24" : "40"}
       fill="none"
       viewBox="0 0 40 40"
-      className={`transition-all ${
+      className={`transition-all mt-1 flex-shrink-0 ${
         props.down ? "" : "text-[#454749] -rotate-90"
       }`}
     >

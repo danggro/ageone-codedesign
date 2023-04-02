@@ -15,7 +15,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
-      <header className="-z-10 w-full pb-[100px] bg-gray-900 bg-cover bg-[url('/OrnamentBox.png')]">
+      <header className="-z-10 w-full  sm:pb-[100px] pb-14 bg-gray-900 bg-bottom bg-cover sm:bg-[url('/OrnamentBox.png')] bg-[url('/ornament-mobile.png')]">
         <NavBar />
         <SectionHero />
       </header>

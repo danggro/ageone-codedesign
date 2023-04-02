@@ -1,32 +1,51 @@
 import Button from "../Button";
 import Container from "../Container";
 import NavLogo from "../Navigation/NavLogo";
+import NavLogoMobile from "../Navigation/NavLogoMobile";
 import FooterItem from "./FooterItem";
 import FooterItemLink from "./FooterItemLink";
 
 export default function SectionFooter() {
   return (
-    <section className="bg-[url('/footer.png')] w-full bg-cover py-10">
+    <section className="sm:bg-[url('/footer.png')] bg-[url('/footer-mobile.png')] w-full bg-cover py-10">
       <Container>
-        <div className="flex items-center justify-between w-10/12 mx-auto mb-10">
-          <h2 className="w-6/12 text-6xl leading-[52px] -tracking-[0.02em] font-semibold text-white">
-            Let&apos;s discuss and bring your vision to life.
+        <div className="flex flex-col items-center justify-between mx-auto mb-10 sm:flex-row sm:w-10/12">
+          <h2 className="sm:w-6/12 sm:text-6xl sm:text-left text-center text-2xl sm:leading-[52px] leading-8 -tracking-[0.02em] font-semibold text-white">
+            Let&apos;s discuss and{" "}
+            <span className="sm:hidden">
+              <br />
+            </span>{" "}
+            bring your vision to life.
           </h2>
-          <Button variant="large" arrow>
-            Let&apos;s Talk
-          </Button>
+          <div className="hidden sm:block">
+            <Button variant="large" arrow>
+              Let&apos;s Talk
+            </Button>
+          </div>
+          <div className="mt-6 sm:hidden">
+            <Button variant="medium" arrow>
+              Let&apos;s Talk
+            </Button>
+          </div>
         </div>
-        <div className="flex pt-[100px] pb-10 border-t border-b">
-          <div className="w-6/12">
-            <NavLogo />
-            <h5 className="w-8/12 mt-6 mb-10 text-lg text-gray-200">
+        <div className="sm:flex sm:pt-[100px] pt-8  pb-10 border-t border-b">
+          <div className="sm:w-6/12">
+            <div className="sm:hidden">
+              <NavLogoMobile />
+            </div>
+            <div className="hidden sm:block">
+              <NavLogo />
+            </div>
+            <h5 className="mt-4 mb-8 text-gray-200 sm:mt-6 sm:mb-10 sm:text-lg text-md sm:w-8/12">
               We&apos;re a team of experienced designers, developers, and
               marketers, passionate about delivering exceptional digital
               solutions.
             </h5>
-            <h5 className="text-lg text-gray-200">hello@agenone.com</h5>
+            <h5 className="text-gray-200 sm:text-lg text-md">
+              hello@agenone.com
+            </h5>
           </div>
-          <div className="flex justify-between w-6/12 pl-8">
+          <div className="flex flex-wrap mt-4 sm:justify-between sm:w-6/12 sm:flex-nowrap sm:mt-0 sm:pl-8 ">
             <FooterItem title="Menu">
               <FooterItemLink href="/">Home</FooterItemLink>
               <FooterItemLink href="/#Services">Services</FooterItemLink>
@@ -58,7 +77,7 @@ export default function SectionFooter() {
             </FooterItem>
           </div>
         </div>
-        <h5 className="mt-10 text-lg text-center text-gray-200">
+        <h5 className="mt-10 text-xs text-center text-gray-200 sm:text-lg">
           Copyright &copy; 2023 by Agenone. All rights reserved.
         </h5>
       </Container>
