@@ -79,7 +79,11 @@ export default function SectionHero() {
         </h3>
         <Carousel>
           {slides.map((m) => {
-            return <BannerItem icon={m.icon}>{m.desc}</BannerItem>;
+            return (
+              <BannerItem icon={m.icon} key={m.desc}>
+                {m.desc}
+              </BannerItem>
+            );
           })}
         </Carousel>
       </div>

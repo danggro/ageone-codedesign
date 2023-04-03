@@ -15,6 +15,9 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>Ageone</title>
+      </Head>
       <header className="-z-10 w-full  sm:pb-[100px] pb-14 bg-gray-900 bg-bottom bg-cover sm:bg-[url('/OrnamentBox.png')] bg-[url('/ornament-mobile.png')]">
         <NavBar />
         <SectionHero />
