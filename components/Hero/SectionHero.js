@@ -1,4 +1,5 @@
 import Button from "../Button";
+import Carousel from "../Carousel";
 import Container from "../Container";
 import BannerItem from "./BannerItem";
 import Attract from "./Item/Attract";
@@ -6,6 +7,25 @@ import Cost from "./Item/Cost";
 import Expanding from "./Item/Expanding";
 import ExpandingMobile from "./Item/ExpandingMobile";
 import Professional from "./Item/Professional";
+
+const slides = [
+  {
+    icon: <ExpandingMobile />,
+    desc: "Expanding the Market",
+  },
+  {
+    icon: <ExpandingMobile />,
+    desc: "Cost-Effective",
+  },
+  {
+    icon: <ExpandingMobile />,
+    desc: "More Professional",
+  },
+  {
+    icon: <ExpandingMobile />,
+    desc: "Attract Client",
+  },
+];
 
 export default function SectionHero() {
   return (
@@ -53,17 +73,15 @@ export default function SectionHero() {
       </div>
 
       <div className="bg-[url('/shape-hero-mobile.png')] rounded-2xl backdrop-blur-[5px] bg-cover bg-no-repeat mt-14 pt-[15px] pb-[38px] sm:hidden">
-        <h3 className="text-lg font-semibold text-center text-white mb-[39px]">
+        <h3 className="text-lg font-semibold text-center text-white mb-[31px]">
           Benefit of <br />
           improving your business
         </h3>
-        <BannerItem icon={<ExpandingMobile />}>Expanding the Market</BannerItem>
-        <div className="flex  justify-center space-x-[6px] mt-[43px]">
-          <div className="rounded-full bg-white w-[6px] h-[6px]"></div>
-          <div className="rounded-full bg-white/50 w-[6px] h-[6px]"></div>
-          <div className="rounded-full bg-white/50 w-[6px] h-[6px]"></div>
-          <div className="rounded-full bg-white/50 w-[6px] h-[6px]"></div>
-        </div>
+        <Carousel>
+          {slides.map((m) => {
+            return <BannerItem icon={m.icon}>{m.desc}</BannerItem>;
+          })}
+        </Carousel>
       </div>
 
       <div className="z-0 sm:block hidden glow w-[650px] h-[650px] absolute -top-[325px] -left-[292px] "></div>
